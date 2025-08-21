@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}All Users{% endblock %}
+
+{% block content %}
+<h1>All Users</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Country</th>
+    </tr>
+    {% for user, details in users.items() %}
+    <tr>
+        <td>{{ user }}</td>
+        <td>{{ details.age }}</td>
+        <td>{{ details.country }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

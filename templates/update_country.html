@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Update User Country</h2>
+
+<form method="POST" action="{{ url_for('update_country') }}">
+    <label for="username">Username:</label>
+    <input type="text" name="username" required><br><br>
+
+    <label for="country">New Country:</label>
+    <input type="text" name="country" required><br><br>
+
+    <button type="submit">Update</button>
+</form>
+
+{% if message %}
+    <p><strong>{{ message }}</strong></p>
+{% endif %}
+
+<h3>Current Users</h3>
+<ul>
+{% for user, info in users.items() %}
+    <li>{{ user }} — {{ info.country }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
