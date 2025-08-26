@@ -9,3 +9,9 @@
 - `base.html` holds the shared layout — all other templates extend it
 - `{% block content %}` is the slot that child templates fill in
 - `url_for('function_name')` generates URLs dynamically — better than hardcoding
+
+## Routes in this project
+- `GET /` — home, list all users/countries
+- `POST /form` — accepts new entry from form
+- `GET/POST /update_country/<name>` — edit an existing entry
+- `GET /404` — custom 404 error page
