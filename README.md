@@ -1,5 +1,4 @@
 # Intro Flask Project
-# Intro Flask Project
 
 This is a simple Flask application to demonstrate basic routing, templates, and forms.
 
