@@ -15,3 +15,7 @@
 - `POST /form` — accepts new entry from form
 - `GET/POST /update_country/<name>` — edit an existing entry
 - `GET /404` — custom 404 error page
+
+## Notebook
+- `intro flask notes.ipynb` contains step-by-step Flask experiments
+- Useful for testing snippets before adding to main.py
