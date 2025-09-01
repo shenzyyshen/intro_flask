@@ -1,0 +1,10 @@
+* Running on http://127.0.0.1:5000
+* Debug mode: on
+
+GET / → 200 OK — Home page with welcome message
+GET /all-users → 200 OK — Lists all users and their countries
+POST /form → 302 Redirect → / — New entry added
+GET /update-country/Alice → 200 OK — Pre-filled form
+POST /update-country/Alice → 302 Redirect → / — Country updated
+GET /greet/Alice → 200 OK — "Hello, Alice!"
+GET /nonexistent → 404 — Custom 404 page served
