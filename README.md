@@ -52,3 +52,11 @@ Install Flask with:
 pip install flask
 
 python3 main.py
+```
+
+## Key Learnings
+
+- Flask routing with `@app.route` and dynamic URL segments `<name>`
+- Jinja2 template inheritance with `extends` and `block`
+- Handling both GET and POST in a single route with `methods=[]`
+- Custom error pages with `@app.errorhandler(404)`
