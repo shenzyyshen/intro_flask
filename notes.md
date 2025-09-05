@@ -19,3 +19,8 @@
 ## Notebook
 - `intro flask notes.ipynb` contains step-by-step Flask experiments
 - Useful for testing snippets before adding to main.py
+
+## Static Files
+- CSS lives in `static/style.css`
+- Referenced in templates with `url_for('static', filename='style.css')`
+- Flask serves static files automatically from the `static/` folder
